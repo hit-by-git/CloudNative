@@ -1,0 +1,221 @@
+{
+  "nodes": [
+    {
+      "id": "UserBase",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "UserCreate",
+      "methods": 0,
+      "is_cloud": false
+    },
+    {
+      "id": "UserRegister",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "UserUpdate",
+      "methods": 0,
+      "is_cloud": false
+    },
+    {
+      "id": "UserUpdateMe",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "UpdatePassword",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "User",
+      "methods": 0,
+      "is_cloud": false
+    },
+    {
+      "id": "UserPublic",
+      "methods": 0,
+      "is_cloud": false
+    },
+    {
+      "id": "UsersPublic",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "ItemBase",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "ItemCreate",
+      "methods": 0,
+      "is_cloud": false
+    },
+    {
+      "id": "ItemUpdate",
+      "methods": 0,
+      "is_cloud": false
+    },
+    {
+      "id": "Item",
+      "methods": 0,
+      "is_cloud": false
+    },
+    {
+      "id": "ItemPublic",
+      "methods": 0,
+      "is_cloud": false
+    },
+    {
+      "id": "ItemsPublic",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "Message",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "Token",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "TokenPayload",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "NewPassword",
+      "methods": 0,
+      "is_cloud": true
+    },
+    {
+      "id": "EmailData",
+      "methods": 0,
+      "is_cloud": false
+    },
+    {
+      "id": "Settings",
+      "methods": 6,
+      "is_cloud": false
+    },
+    {
+      "id": "PrivateUserCreate",
+      "methods": 0,
+      "is_cloud": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "UserBase",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "UserCreate",
+      "target": "UserBase",
+      "type": "inheritance"
+    },
+    {
+      "source": "UserRegister",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "UserUpdate",
+      "target": "UserBase",
+      "type": "inheritance"
+    },
+    {
+      "source": "UserUpdateMe",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "UpdatePassword",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "User",
+      "target": "UserBase",
+      "type": "inheritance"
+    },
+    {
+      "source": "UserPublic",
+      "target": "UserBase",
+      "type": "inheritance"
+    },
+    {
+      "source": "UsersPublic",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "ItemBase",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "ItemCreate",
+      "target": "ItemBase",
+      "type": "inheritance"
+    },
+    {
+      "source": "ItemUpdate",
+      "target": "ItemBase",
+      "type": "inheritance"
+    },
+    {
+      "source": "Item",
+      "target": "ItemBase",
+      "type": "inheritance"
+    },
+    {
+      "source": "ItemPublic",
+      "target": "ItemBase",
+      "type": "inheritance"
+    },
+    {
+      "source": "ItemsPublic",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "Message",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "Token",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "TokenPayload",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "NewPassword",
+      "target": "SQLModel",
+      "type": "inheritance"
+    },
+    {
+      "source": "Settings",
+      "target": "BaseSettings",
+      "type": "inheritance"
+    },
+    {
+      "source": "PrivateUserCreate",
+      "target": "BaseModel",
+      "type": "inheritance"
+    }
+  ]
+}
